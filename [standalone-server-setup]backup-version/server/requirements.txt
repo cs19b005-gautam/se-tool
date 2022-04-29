@@ -1,0 +1,8 @@
+requests
+bs4
+arrow
+pymongo
+nltk
+gensim
+pymongo[srv]
+sqlite3
