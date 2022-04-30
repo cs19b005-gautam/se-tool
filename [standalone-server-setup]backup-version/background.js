@@ -673,8 +673,6 @@ var badges_final = `
                                       <iframe src="https://kowndinya2000.github.io/badge-loader.github.io/index-green.html" frameborder="0" style="width: 4rem;height: 1rem;"></iframe>
                                   </p>
                               </button>    
-                              
-                              
                           
                               </div>
                       </div>
@@ -791,18 +789,7 @@ var badges_final = `
                                  `;
 
 
-clone_pairs = {}
 
-function clone_pairs(response_string) {
-  for (let i = 0; i < response_string.split('&').length; i++){
-    temp_percentage = {}
-    for (let j = 1; j< response_string.split('&')[i].split('>').length; j++){
-      temp_percentage[response_string.split('&')[i].split('>')[j]] = parseFloat(temp_percentage[response_string.split('&')[i].split('>')[j+1]]);
-      j++;
-    }
-    clone_pairs[response_string.split('&')[i].split('>')[0]] = temp_percentage;
-  }
-}
 
 
 function add_insights() {
