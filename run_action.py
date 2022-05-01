@@ -113,7 +113,7 @@ def main():
     ignore_files_list = None
     json_output = True
 
-    detection_result, code_similarity = clone_code_detection.run(int(fail_threshold), directories_list, files_list,
+    detection_result, code_similarity = clone_code_detection.get_similarities(int(fail_threshold), directories_list, files_list,
                                                                      ignore_directories_list, ignore_files_list,
                                                                      json_output, project_root_dir, file_extensions_list,
                                                                      int(ignore_threshold), bool(only_code))
