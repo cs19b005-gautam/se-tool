@@ -1,6 +1,9 @@
-# Extension for GitQ chrome plugin
+#Clone code detection
 
-> name: Duplicate code
+For whatever repository you want to check the cloning percentage, fork the repo and setup a work-flow and add a '.yml' file and paste the following code, then commit your changes to check the similairty perecentage between all the files.
+
+```
+name: Duplicate code
 
 on: pull_request
 
@@ -14,3 +17,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           directories: "."
+```
